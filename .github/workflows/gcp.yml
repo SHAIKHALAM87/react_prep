@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - uses: github-actions@my-kubernetes-codelab-376208.iam.gserviceaccount.com
+    - uses: google-github-actions/setup-gcloud@master
       with:
         service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
         project_id: ${{ env.PROJECT_ID }}
